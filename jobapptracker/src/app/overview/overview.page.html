@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Overview
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Overview</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-card color="primary">
+      <ion-card-header>
+        <ion-card-title>Applied - {{countStatus(items, "Applied")}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    
+    <ion-card color="success">
+      <ion-card-header>
+        <ion-card-title>Offer - {{countStatus(items, "Offer")}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    
+    <ion-card color="warning">
+      <ion-card-header>
+        <ion-card-title>Interview - {{countStatus(items, "Interview")}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    
+    <ion-card color="danger">
+      <ion-card-header>
+        <ion-card-title>Rejection - {{countStatus(items, "Rejection")}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+</ion-content>

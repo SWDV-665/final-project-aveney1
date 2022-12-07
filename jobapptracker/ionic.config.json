@@ -1,0 +1,11 @@
+{
+  "name": "jobapptracker",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "cfac1a5f"
+}
